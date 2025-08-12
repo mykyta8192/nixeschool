@@ -138,6 +138,7 @@ header {
     margin: 20px;
     padding: 5px;
     border-radius: 1.5rem;
+    transition: width 0.5s ease, background-color 0.5s ease;
 }
 
 .section2cardname {
@@ -174,6 +175,11 @@ header {
     color: #4a4aef; 
     font-size: 2rem;
     font-weight: bolder;
+}
+
+.section2card:hover {
+    width: 23%;
+    background-color: bisque;
 }
 
 @media(max-width: 1041px) {
