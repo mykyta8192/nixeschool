@@ -205,6 +205,7 @@ header {
     }
     .section2cardresults {
         height: 61%;
+        font-size: 0.9rem;
     }
 }    
 
@@ -246,6 +247,9 @@ header {
     .section2cardresults {
         font-size: 0.8rem;
     }
+    .section2cardcontact {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 700px) {
@@ -286,7 +290,7 @@ header {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 560px) {
     header {
         font-size: 1rem;
     }
@@ -344,7 +348,19 @@ header {
     .section1img {
         width: 75%;
     }
+    .section2text {
+        font-size: 1.2rem;
+    }
     .section2cardname {
         font-size: 1.5rem;
+    }
+    .section2cardcontact {
+        margin: 12px;
+    }
+    .section2cardresults {
+        font-size: 1rem;
+    }
+    .section2cardresults p:nth-child(n+2) {
+        display: none;
     }
 }
