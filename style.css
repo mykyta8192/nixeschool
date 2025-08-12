@@ -6,7 +6,7 @@ html {
     scroll-behavior: smooth;
 }
 
-#courses, #contact {
+#courses, #contact, #tutor {
     scroll-margin-top: 60px;
 }
 
