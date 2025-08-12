@@ -89,14 +89,62 @@ header {
     display: flex;
     justify-content: space-around;
     font-size: 2rem;
+    align-items: center;
+}
+
+.section1 div {
+    width: 50%;
 }
 
 .section1img {
-    height: 40rem;
+    width: 80%;
 }
 
 .section1aboutme {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.section1aboutme h2,
+.section1aboutme p {
+    margin: 1rem 0;
+}
+
+@media(max-width: 1041px) {
+    .section1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .section1, .section2, .section3, .section4 {
+        height: calc(50vh - 50px);
+    }
+    .section1 {
+        font-size: 0.6rem;
+    }
+    .section1img {
+        width: 80%;
+    }
+    header {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 410px) {
+    header {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 350px) {
+    header {
+        font-size: 0.6rem;
+    }
 }
