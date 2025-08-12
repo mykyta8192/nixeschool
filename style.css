@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+#courses, #contact {
+    scroll-margin-top: 60px;
+}
+
 body {
     background-color: #FFBF69;
     margin: 0;
@@ -77,7 +85,7 @@ header {
     background-color: #FF9F1C;
 }
 
-.section1, .section2, .section3, .section4{
+.section1, .section2, .section3, .section4, .section5{
     width: 100%;
     height: calc(100vh - 75px);
     padding-left: 20px;
@@ -220,7 +228,7 @@ header {
 .section3card1, .section3card2, .section3card3, .section3card4 {
     background-color: aliceblue;
     margin: 10px;
-    height: 38vh;
+    height: 37vh;
     transition: transform 0.5s ease, background-color 0.5s ease;
     display: flex;
     align-items: center;
