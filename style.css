@@ -128,6 +128,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 100%;
 }
 
 .section2card {
@@ -196,6 +197,57 @@ header {
     background-color: bisque;
 }
 
+.section3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.section3text {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3cards {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3card1, .section3card2, .section3card3, .section3card4 {
+    background-color: aliceblue;
+    margin: 10px;
+    height: 38vh;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3card1:hover, .section3card2:hover, .section3card3:hover, .section3card4:hover {
+    background-color: bisque;
+    transform: scale(1.03);
+}
+
+.section3card1 {
+    width: calc(70% - 20px);
+}
+
+.section3card2 {
+    width: calc(30% - 20px);
+}
+
+.section3card3 {
+    width: calc(30% - 20px);
+}
+
+.section3card4 {
+    width: calc(70% - 20px);
+}
+
 @media(max-width: 1200px) {
     .section2 {
         font-size: 1.8rem;
@@ -262,9 +314,8 @@ header {
     .section2cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         align-items: stretch;
-        height: auto;
     }
 
     .section2card {
@@ -287,6 +338,9 @@ header {
     }
     .section2cardresults p:nth-child(n+4) {
         display: none;
+    }
+    .section3text {
+        font-size: 1.5rem;
     }
 }
 
@@ -342,6 +396,9 @@ header {
     .section1img {
         width: 65%;
     }
+    .section3text {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 350px) {
@@ -368,5 +425,8 @@ header {
     }
     .section2cardresults p:nth-child(n+2) {
         display: none;
+    }
+    .section3text {
+        font-size: 1rem;
     }
 }
