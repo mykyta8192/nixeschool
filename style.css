@@ -116,15 +116,15 @@ header {
 }
 
 .section2text {
-    height: 20px;
-    font-size: 2rem;
+    height: 35px;
+    font-size: 2.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .section2cards {
-    height: calc(100vw - 20px);
+    height: calc(100vw - 35px);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -146,7 +146,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 2.3rem;
     color: #4a4aef;
     font-weight: bolder;
 }
@@ -154,9 +154,13 @@ header {
 .section2cardresults {
     height: 56%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     font-size: 1rem;
+}
+
+.section2cardresults p {
+    margin: 5px;
 }
 
 .section2cardprice {
@@ -172,9 +176,19 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #4a4aef; 
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bolder;
+}
+
+.section2cardcontact a {
+    color: #4a4aef;
+    border: 2px solid black;
+    padding: 3px;
+    border-radius: 1rem;
+}
+
+.section2cardcontact a:hover {
+    background-color: #FF9F1C;
 }
 
 .section2card:hover {
@@ -189,26 +203,36 @@ header {
 }
 
 @media (max-width: 900px) {
-    .section1, .section2, .section3, .section4 {
-        height: calc(50vh - 50px);
-    }
     .section1 {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
     .section1img {
-        width: 65%;
+        width: 90%;
     }
     header {
         font-size: 1.5rem;
+    }
+    .section2cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .section2card {
+        width: 45%;
+        margin: 10px;
+    }
+    .section2card:hover {
+        width: 48%;
     }
 }
 
 @media (max-width: 700px) {
     .section1 {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
     .section1img {
-        width: 80%;
+        width: 100%;
     }
 }
 
@@ -217,10 +241,19 @@ header {
         font-size: 1rem;
     }
     .section1 {
-        font-size: 0.75rem;
+        font-size: 1.1rem;
+    }
+    .section1 {
+        flex-direction: column;
+    }
+    .section1 div {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
     .section1img {
-        width: 85%;
+        width: 60%;
     }
 }
 
@@ -229,10 +262,10 @@ header {
         font-size: 0.8rem;
     }
     .section1 {
-        font-size: 0.65rem;
+        font-size: 1rem;
     }
     .section1img {
-        width: 90%;
+        width: 70%;
     }
 }
 
@@ -241,9 +274,9 @@ header {
         font-size: 0.6rem;
     }
     .section1 {
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
     .section1img {
-        width: 95%;
+        width: 75%;
     }
 }
