@@ -124,7 +124,7 @@ header {
 }
 
 .section2cards {
-    height: calc(100vw - 35px);
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -319,10 +319,16 @@ header {
 
 @media (max-width: 441px) {
     .section2text {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .section2card {
         margin: 5px;
+    }
+    .section2cardname {
+        font-size: 1.5rem;
+    }
+    .section2cardresults {
+        font-size: 0.7rem;
     }
 }
 
@@ -331,10 +337,10 @@ header {
         font-size: 0.8rem;
     }
     .section1 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .section1img {
-        width: 70%;
+        width: 65%;
     }
 }
 
