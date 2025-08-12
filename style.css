@@ -196,9 +196,31 @@ header {
     background-color: bisque;
 }
 
+@media(max-width: 1200px) {
+    .section2 {
+        font-size: 1.8rem;
+    }
+    .section2cardname {
+        height: 15%;
+    }
+    .section2cardresults {
+        height: 61%;
+    }
+}    
+
+
 @media(max-width: 1041px) {
     .section1 {
         font-size: 1.8rem;
+    }
+    .section2text {
+        font-size: 2.3rem;
+    }
+    .section2cardname {
+        font-size: 2rem;
+    }
+    .section2cardresults {
+        font-size: 0.8rem;
     }
 }
 
@@ -212,18 +234,17 @@ header {
     header {
         font-size: 1.5rem;
     }
-    .section2cards {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        height: auto;
+    .section2text {
+        font-size: 2rem;
     }
-    .section2card {
-        width: 45%;
-        margin: 10px;
+    .section2cardname {
+        font-size: 1.7rem;
     }
-    .section2card:hover {
-        width: 48%;
+    .section2cardprice {
+        font-size: 1.3rem;
+    }
+    .section2cardresults {
+        font-size: 0.8rem;
     }
 }
 
@@ -233,6 +254,35 @@ header {
     }
     .section1img {
         width: 100%;
+    }
+    .section2cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        height: auto;
+    }
+
+    .section2card {
+        width: 45%;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+        flex: 1 1 45%;
+    }
+
+    .section2cardcontact{
+        margin: 5px;
+    }
+
+    .section2card:hover {
+        width: 45%;
+        background-color: bisque;
+    }
+    .section2cardresults p:nth-child(n+4) {
+        display: none;
     }
 }
 
@@ -254,6 +304,21 @@ header {
     }
     .section1img {
         width: 60%;
+    }
+    .section2cardresults p:nth-child(n+3) {
+        display: none;
+    }
+    .section2cardcontact {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 441px) {
+    .section2text {
+        font-size: 1.5rem;
+    }
+    .section2card {
+        margin: 5px;
     }
 }
 
@@ -278,5 +343,8 @@ header {
     }
     .section1img {
         width: 75%;
+    }
+    .section2cardname {
+        font-size: 1.5rem;
     }
 }
