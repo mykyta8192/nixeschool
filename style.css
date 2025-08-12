@@ -14,6 +14,7 @@ a {
 }
 
 header {
+    background-color: #FFC107;
     position: fixed;
     top: 0;
     left: 0;
@@ -76,8 +77,17 @@ header {
     background-color: #FFA000;
 }
 
-.section {
+.section1, .section2, .section3, .section4{
     width: 100%;
     height: calc(100vh - 75px);
     padding: 20px;
 } 
+
+.section1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section1img {
+    height: 35rem;
+}
