@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #FFC107;
+    background-color: #FFBF69;
     margin: 0;
     padding-top: 75px;
 }
@@ -14,7 +14,7 @@ a {
 }
 
 header {
-    background-color: #FFC107;
+    background-color: #FFBF69;
     position: fixed;
     top: 0;
     left: 0;
@@ -67,14 +67,14 @@ header {
     display: block; 
     width: 100%;
     height: 100%;
-    background-color: #FFC107;
+    background-color: #FFBF69;
     border: 2px solid black;
     border-radius: 1rem;
     transition: background-color 0.3s ease;
 }
 
 .logbtn:hover {
-    background-color: #FFA000;
+    background-color: #FF9F1C;
 }
 
 .section1, .section2, .section3, .section4{
@@ -121,13 +121,22 @@ header {
         height: calc(50vh - 50px);
     }
     .section1 {
-        font-size: 0.6rem;
+        font-size: 1.1rem;
     }
     .section1img {
-        width: 80%;
+        width: 65%;
     }
     header {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .section1 {
+        font-size: 0.9rem;
+    }
+    .section1img {
+        width: 80%;
     }
 }
 
@@ -135,16 +144,34 @@ header {
     header {
         font-size: 1rem;
     }
+    .section1 {
+        font-size: 0.75rem;
+    }
+    .section1img {
+        width: 85%;
+    }
 }
 
 @media (max-width: 410px) {
     header {
         font-size: 0.8rem;
     }
+    .section1 {
+        font-size: 0.65rem;
+    }
+    .section1img {
+        width: 90%;
+    }
 }
 
 @media (max-width: 350px) {
     header {
         font-size: 0.6rem;
+    }
+    .section1 {
+        font-size: 0.6rem;
+    }
+    .section1img {
+        width: 95%;
     }
 }
