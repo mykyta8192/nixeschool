@@ -403,6 +403,33 @@ header {
     cursor: pointer;
 }
 
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 1% 1% 1%;
+}
+
+.footercard {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.footercard div p {
+    margin: 0;
+}
+
+.footercard-2-1 {
+    display: flex;
+}
+
+.footercard-2-1 div {
+    padding-right: 5px;
+}
+
 @media(max-width: 1200px) {
     .section2 {
         font-size: 1.8rem;
