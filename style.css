@@ -287,6 +287,7 @@ header {
     flex-direction: column;
     border-radius: 1.5rem;
     padding: 5px;
+    padding-bottom: 7px;
 }
 
 .section4cardname, .section4cardprice, .section4cardcontact {
@@ -306,7 +307,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     font-size: 1.2rem;
 }
 
@@ -338,6 +338,31 @@ header {
 .section4card:hover {
     width: 43%;
     background-color: bisque;
+}
+
+.section5cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 90%;
+}
+
+.section5card1 {
+    width: 65%;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section5card2 {
+    width: 25%;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 @media(max-width: 1200px) {
@@ -545,7 +570,7 @@ header {
         height: 13%;
     }
     .section4cardcontact {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         height: 13%;
     }
 }
