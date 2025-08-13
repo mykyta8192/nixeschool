@@ -390,10 +390,12 @@ header {
     font-size: 1.3rem;
     padding: 10px;
     border-radius: 1rem;
+    margin: 10px;
 }
 
 .contact-form button {
     background-color: #CBF3F0;
+    margin: 10px;
 }
 
 .contact-form button:hover {
@@ -434,6 +436,9 @@ header {
     .section4text {
         font-size: 1.5rem;
     }
+    .section5card1 div{
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 900px) {
@@ -460,6 +465,9 @@ header {
     }
     .section2cardcontact {
         font-size: 1.5rem;
+    }
+    .section5card1 div{
+        font-size: 1.2rem;
     }
 }
 
@@ -503,6 +511,22 @@ header {
     }
     .section4cardresult p:nth-child(n+5) {
         display: none;
+    }
+    .section5cards {
+        flex-direction: column;
+    }
+    .section5card1, .section5card2 {
+        width: 90%;
+        height: 45%;
+    }
+    .section5card1 div{
+        font-size: 1rem;
+    }
+    .contact-form label {
+        font-size: 1rem;
+    }
+    .contact-form input, .contact-form button {
+        font-size: 0.7rem;
     }
 }
 
@@ -559,6 +583,9 @@ header {
     }
     .section4card:hover {
         width: 100%;
+    }
+    .section5card1 div{
+        font-size: 0.8rem;
     }
 }
 
@@ -641,5 +668,8 @@ header {
     }
     .section4cardresult p:nth-child(n+3) {
         display: none;
+    }
+    .section5card1 div{
+        font-size: 0.7rem;
     }
 }
