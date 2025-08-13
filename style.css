@@ -667,10 +667,13 @@ header {
         height: 13%;
     }
     .section5card1 div{
-        font-size: 0.65rem;
+        font-size: 0.7rem;
     }
     .contact-form input, .contact-form button, .contact-form button {
         margin: 5px;
+    }
+    .section5card1 div p{
+        margin: 7px;
     }
 }
 
